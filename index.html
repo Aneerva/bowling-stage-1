@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"> </script>
+<script src="./throw.js"></script>
+    </head>
+    <body>
+        <!--Bowling Balls-->
+<a-entity bowling-balls></a-entity>
+
+
+var camera - document.querySelector("#camera").object3D;
+var direction - new THREE.Vector3();
+camera.getWorldDirection(direction);
+ball.setAttribute("velocity", direction.multiplyScalar (-10)) ;
+
+    </body>
+</html>
